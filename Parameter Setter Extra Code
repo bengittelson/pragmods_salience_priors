@@ -1,0 +1,136 @@
+// if (scale_and_level == 0) {
+//     var level = 0;
+//     var target_unpermuted = 1;
+//     //var distractor_unpermuted = 1;
+//     //var other_unpermuted = 0;
+//     var target_prop_unpermuted = 0;
+//     //var distractor_prop_unpermuted = 2;
+//     //var foil_prop_unpermuted = 0;
+//     var choice_names_unpermuted = ["foil", "target"];
+//     var positions = ["left","right"];
+// }
+
+
+// //  Level 1, scales - m3/r2
+// if (scale_and_level == 1) {
+//     var level = 1;
+//     var target_unpermuted = 0;
+//     //var distractor_unpermuted = 0;
+//     //var other_unpermuted = 0;
+//     var target_prop_unpermuted = 0;
+//     //var distractor_prop_unpermuted = 1;
+//     //var foil_prop_unpermuted = 0;
+//     var choice_names_unpermuted = ["target","foil"]; 
+//     var positions = ["left", "right"]; 
+// }
+
+// // Level 0, scales+ - m1/r3     
+// // Consider replacing "logical" for a second "foil", since neither alternative is strictly coherent
+// if (scale_and_level == 2) {
+//     var level = 1;
+//     var target_unpermuted = 1;
+//     //var distractor_unpermuted = 1;
+//     //var other_unpermuted = 0;
+//     var target_prop_unpermuted = 1;
+//     //var distractor_prop_unpermuted = 1;
+//     //var foil_prop_unpermuted = 2;
+//     var choice_names_unpermuted = ["foil", "target", "logical"]; 
+//     var positions = ["left", "middle", "right"]; 
+// }
+// // Level 1, scales+ - m3/r1
+// if (scale_and_level == 3) {
+//     var level = 0;
+//     var target_unpermuted = 2;
+//     //var distractor_unpermuted = 1;
+//     //var other_unpermuted = 2;
+//     var target_prop_unpermuted = 0;
+//     //var distractor_prop_unpermuted = 1;
+//     //var foil_prop_unpermuted = 0;
+//     //CHECK NAMING CONVENTIONS HERE
+//     var choice_names_unpermuted = ["foil", "logical", "target"]; 
+//     var positions = ["left", "middle", "right"]; 
+// }
+
+// // Level 2, scales+ - m2/r2
+// if (scale_and_level == 4) {
+//     var level = 2;
+//     var target_unpermuted = 2;
+//     //var distractor_unpermuted = 2;
+//     //var other_unpermuted = 0;
+//     var target_prop_unpermuted = 1;
+//     //var distractor_prop_unpermuted = 0;
+//     //var foil_prop_unpermuted = 2;
+//     var choice_names_unpermuted = ["foil", "foil2", "target", "logical"]; 
+//     var positions = ["left", "middle1", "middle2", "right"]; 
+// }
+
+// // Compltetely underdetermined because the target feature is everywehre.
+// if (scale_and_level == 5) {
+//     var level = 0;
+//     var target_unpermuted = 3;
+//     //var distractor_unpermuted = 1;
+//     //var other_unpermuted = 2;
+//     var target_prop_unpermuted = 0;
+//     //var distractor_prop_unpermuted = 0;
+//     //var foil_prop_unpermuted = 2;
+//     var choice_names_unpermuted = ["foil", "foil2", "logical", "target"];
+//     var positions =["left", "middle1", "middle2", "right"]; 
+// }
+
+// if (scale_and_level == 6) {
+//     //CHECK LEVEL
+//     var level = 1;
+//     var target_unpermuted = 0;
+//     //var distractor_unpermuted = 2;
+//     //var other_unpermuted = 0;
+//     var target_prop_unpermuted = 1;
+//     //var distractor_prop_unpermuted = 1;
+//     //var foil_prop_unpermuted = 2;
+//     var choice_names_unpermuted = ["target", "logical"]; 
+//     var positions = ["left", "right"]; 
+// }
+
+// if (scale_and_level == 7) {
+//     var level = 2;
+//     var target_unpermuted = 1;
+//     //var distractor_unpermuted = 2;
+//     var distractor_unpermuted = 0; 
+//     var other_unpermuted = 0;
+//     var target_prop_unpermuted = 2;
+//     var distractor_prop_unpermuted = 1;
+//     var foil_prop_unpermuted = 0;
+//     var choice_names_unpermuted = ["single","twin"]; 
+//     var positions = ["left", "right"]; 
+// }
+
+
+// // This is for the patch of colors series 
+// if (scale_and_level == 8) {
+//     var level = 3;
+//     var target_unpermuted = 2;
+//     var distractor_unpermuted = 1;
+//     var other_unpermuted = 0;
+//     var target_prop_unpermuted = 2;
+//     var distractor_prop_unpermuted = 1;
+//     var foil_prop_unpermuted = 0;
+//     var choice_names_unpermuted = ["twin_1","twin_2","odd_one"];
+//     var positions = ["left", "middle", "right"]; 
+// }
+
+// // Odd one out
+// if (scale_and_level == 9) {
+
+//     //possible template: level, target_unpermuted, target_prop_unpermuted, 
+//     // choice_names_unpermuted, positions
+//     var level = 0;
+//     var target_unpermuted = 3;
+//     var distractor_unpermuted = 1;
+//     var other1_unpermuted = 0;
+//     var other2_unpermuted = 2; 
+//     var target_prop_unpermuted = 0;
+//     var distractor_prop_unpermuted = 1;
+//     var foil1_prop_unpermuted = 2;
+//     var foil2_prop_unpermuted = 3; 
+//     var choice_names_unpermuted = ["two_features_1", "two_features_2", "three_features", "target"];
+//     var positions = ["left","middle1","middle2","right"];
+// }
