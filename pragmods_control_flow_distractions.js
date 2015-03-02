@@ -38,10 +38,10 @@ number_to_name[2] = 'C';
 number_to_name[3] = 'D'; 
 
 var number_to_position = new Array(); 
-number_to_position[0] = 'object1'; 
-number_to_position[1] = 'object2'; 
-number_to_position[2] = 'object3'; 
-number_to_position[3] = 'object4'; 
+number_to_position[0] = '0'; 
+number_to_position[1] = '1'; 
+number_to_position[2] = '2'; 
+number_to_position[3] = '3'; 
 
 //object1 items
 var obj1 = ""; 
