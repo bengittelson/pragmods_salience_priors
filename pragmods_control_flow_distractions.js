@@ -45,33 +45,45 @@ number_to_position[3] = 'object4';
 
 //object1 items
 var obj1 = ""; 
-for (i = 0; i < number_to_position.length; i++) {
-	if (expt_perm[0][i] == 1) {
-		obj1 += props[i] + ","; 
+if (expt_perm.length >= 1) {
+	for (i = 0; i < number_to_position.length; i++) {
+		if (expt_perm[0][i] == 1) {
+			obj1 += props[i] + ","; 
+		}
 	}
 }
+
+
 
 //object2 items
 var obj2 = ""; 
-for (i = 0; i < number_to_position.length; i++) {
-	if (expt_perm[1][i] == 1) {
-		obj2 += props[i] + ","; 
+if (expt_perm.length >= 2) {
+	for (i = 0; i < number_to_position.length; i++) {
+		if (expt_perm[1][i] == 1) {
+			obj2 += props[i] + ","; 
+		}
 	}
 }
+
 
 //object3 items
 var obj3 = ""; 
-for (i = 0; i < number_to_position.length; i++) {
-	if (expt_perm[2][i] == 1) {
-		obj3 += props[i] + ","; 
+if (expt_perm.length >= 3) {
+	for (i = 0; i < number_to_position.length; i++) {
+		if (expt_perm[2][i] == 1) {
+			obj3 += props[i] + ","; 
+		}
 	}
 }
 
+
 //object4 items
 var obj4 = ""; 
-for (i = 0; i < number_to_position.length; i++) {
-	if (expt_perm[3][i] == 1) {
-		obj4 += props[i] + ","; 
+if (expt_perm.length >= 4) {
+	for (i = 0; i < number_to_position.length; i++) {
+		if (expt_perm[3][i] == 1) {
+			obj4 += props[i] + ","; 
+		}
 	}
 }
 
