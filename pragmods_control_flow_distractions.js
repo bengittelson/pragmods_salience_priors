@@ -1,3 +1,8 @@
+/*TO ADD (FROM ANDRES' EMAIL ON 2/19/15)
+-ITEMS/FEATURES OF EACH REFERENT ("BY POSITION")
+-ITEMS/FEATURES OF THE REFERENT CHOSEN
+-POSITION OF THE REFERENT CHOSEN
+*/
 
 // ---------------- 3. CONTROL FLOW ------------------
 // This .js file determines the flow of the variable elements in the experiment as dictated 
@@ -31,6 +36,49 @@ number_to_name[0] = 'A';
 number_to_name[1] = 'B';
 number_to_name[2] = 'C';
 number_to_name[3] = 'D'; 
+
+var number_to_position = new Array(); 
+number_to_position[0] = 'object1'; 
+number_to_position[1] = 'object2'; 
+number_to_position[2] = 'object3'; 
+number_to_position[3] = 'object4'; 
+
+//object1 items
+var obj1 = ""; 
+for (i = 0; i < number_to_position.length; i++) {
+	if (expt_perm[0][i] == 1) {
+		obj1 += props[i] + ","; 
+	}
+}
+
+//object2 items
+var obj2 = ""; 
+for (i = 0; i < number_to_position.length; i++) {
+	if (expt_perm[1][i] == 1) {
+		obj2 += props[i] + ","; 
+	}
+}
+
+//object3 items
+var obj3 = ""; 
+for (i = 0; i < number_to_position.length; i++) {
+	if (expt_perm[2][i] == 1) {
+		obj3 += props[i] + ","; 
+	}
+}
+
+//object4 items
+var obj4 = ""; 
+for (i = 0; i < number_to_position.length; i++) {
+	if (expt_perm[3][i] == 1) {
+		obj4 += props[i] + ","; 
+	}
+}
+
+items_matrix_str = [obj1, obj2, obj3, obj4]; 
+
+
+
 
 showSlide("instructions");
 
@@ -115,8 +163,22 @@ var experiment = {
 
 	hand_position: -1, 
 
+	//NEW VARIABLES I ADDED
+	object_1_items: obj1,
+	object_2_items: obj2,
+	object_3_items: obj3,
+	object_4_items: obj4,
+
+	position_chosen: "",
+	items_chosen: "", // PICK THE CHOICE REFERENT USING CHOICE AND
+	// ITS ITEMS? 
+	//USE CHOICE_NAMES TO ACCESS THE DIFFERENT CHOICES? 
+
+
+
+
 	// FAMILIARIZATION DISPLAY FUNCTION
-	// This 
+	// T
 	next_familiarization: function() {
 	    // Allow experiment to start if it's a turk worker OR if it's a test run
 	    // Warning, it may not be security best practices... you know why
@@ -481,6 +543,8 @@ var experiment = {
 		//	experiment.choice = "target"
 		//} else {
 		experiment.choice = choice_names[c];
+		experiment.position_chosen = number_to_position[c]; 
+		experiment.items_chosen = items_matrix_str[c]; 
 		//}
 
 		// unchoose everything
