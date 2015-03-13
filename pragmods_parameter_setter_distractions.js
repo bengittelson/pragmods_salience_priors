@@ -194,39 +194,50 @@ var expt = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]; // SCALES
 // var distractor_prop_unpermuted = 1;
 
 //definitions for scales and levels
+
+var matrix_number; 
 if (scale_and_level === 0 || scale_and_level === 1) {
+    matrix_number = 1; 
     expt = [[0, 1], [1, 1]]; 
 }   
 
 if (scale_and_level === 2 || scale_and_level === 3) {
+    matrix_number = 2; 
     expt = [[0,0], [0, 1], [1, 1]];
 }
 
 if (scale_and_level === 4 || scale_and_level === 5) {
+    matrix_number = 3; 
     expt = [[0, 0], [0, 0], [0, 1], [1, 1]]; 
 }
 
 if (scale_and_level === 6 || scale_and_level === 7) {
+    matrix_number = 4; 
     expt = [[0, 1, 1], [1, 1, 1]]; 
 }
 
 if (scale_and_level >= 8 && scale_and_level <= 10) {
+    matrix_number = 5; 
     expt = [[0, 0, 1], [0, 1, 1], [1, 1, 1]]; 
 }
 
 if (scale_and_level >= 11 && scale_and_level <= 13) {
+    matrix_number = 6; 
     expt = [[0, 0, 1], [0, 0, 1], [0, 1, 1], [1, 1, 1]]; 
 }
 
 if (scale_and_level === 14 || scale_and_level === 15) {
-   expt = [[0, 1, 1, 1], [1, 1, 1, 1]]; 
+    matrix_number = 7; 
+    expt = [[0, 1, 1, 1], [1, 1, 1, 1]]; 
 }
 
 if (scale_and_level >= 16 && scale_and_level <= 18) {
+    matrix_number = 8; 
     expt = [[0, 0, 1, 1], [0, 1, 1, 1], [1, 1, 1, 1]]; 
 }
 
 if (scale_and_level >= 19 && scale_and_level <= 21) {
+    matrix_number = 9; 
     expt = [[0, 0, 1, 1], [0, 0, 1, 1], [0, 1, 1, 1], [1, 1, 1, 1]]; 
 }
 
