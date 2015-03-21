@@ -80,8 +80,13 @@ var stim_index = random(0, 5);
 //9: [[0, 0, 0, 1], [0, 0, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
 var conditions_list = [[0, 6, 14], [2, 4], [8, 9, 11, 12, 16, 17, 19, 20]]; 
 var current_experiment = 2; 
+
 var scale_and_level_picker = random(0, conditions_list[current_experiment].length - 1); 
 var scale_and_level = conditions_list[current_experiment][scale_and_level_picker]; 
+
+//DON'T HARDCODE THIS
+var number_of_matrices = 9; 
+var matrix_number = random(0, number_of_matrices - 1); 
 //var scale_and_level = 3; 
 
 
@@ -195,49 +200,47 @@ var expt = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]; // SCALES
 
 //definitions for scales and levels
 
-var matrix_number; 
-if (scale_and_level === 0 || scale_and_level === 1) {
-    matrix_number = 1; 
+if (matrix_number === 0) {
     expt = [[0, 1], [1, 1]]; 
 }   
 
-if (scale_and_level === 2 || scale_and_level === 3) {
-    matrix_number = 2; 
+if (matrix_number === 1) {
+    //matrix_number = 2; 
     expt = [[0,0], [0, 1], [1, 1]];
 }
 
-if (scale_and_level === 4 || scale_and_level === 5) {
-    matrix_number = 3; 
+if (matrix_number === 2) {
+    //matrix_number = 3; 
     expt = [[0, 0], [0, 0], [0, 1], [1, 1]]; 
 }
 
-if (scale_and_level === 6 || scale_and_level === 7) {
-    matrix_number = 4; 
+if (matrix_number === 3) {
+    //matrix_number = 4; 
     expt = [[0, 1, 1], [1, 1, 1]]; 
 }
 
-if (scale_and_level >= 8 && scale_and_level <= 10) {
-    matrix_number = 5; 
+if (matrix_number === 4) {
+    //matrix_number = 5; 
     expt = [[0, 0, 1], [0, 1, 1], [1, 1, 1]]; 
 }
 
-if (scale_and_level >= 11 && scale_and_level <= 13) {
-    matrix_number = 6; 
+if (matrix_number === 5) {
+    //matrix_number = 6; 
     expt = [[0, 0, 1], [0, 0, 1], [0, 1, 1], [1, 1, 1]]; 
 }
 
-if (scale_and_level === 14 || scale_and_level === 15) {
-    matrix_number = 7; 
+if (matrix_number === 6) {
+    //matrix_number = 7; 
     expt = [[0, 1, 1, 1], [1, 1, 1, 1]]; 
 }
 
-if (scale_and_level >= 16 && scale_and_level <= 18) {
-    matrix_number = 8; 
+if (matrix_number === 7) {
+    //matrix_number = 8; 
     expt = [[0, 0, 1, 1], [0, 1, 1, 1], [1, 1, 1, 1]]; 
 }
 
-if (scale_and_level >= 19 && scale_and_level <= 21) {
-    matrix_number = 9; 
+if (matrix_number === 8) {
+    //matrix_number = 9; 
     expt = [[0, 0, 1, 1], [0, 0, 1, 1], [0, 1, 1, 1], [1, 1, 1, 1]]; 
 }
 
