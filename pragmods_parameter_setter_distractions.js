@@ -65,7 +65,6 @@ var familiarization_status = 0;
 //    4 -> "sundae"
 //    5 -> "Christmas tree"
 var stim_index = random(0, 5); 
-//var stim_index = 1; 
 
 
 // The Scale and Levels.
