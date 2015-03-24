@@ -85,6 +85,13 @@ var scale_and_level = conditions_list[current_experiment][scale_and_level_picker
 
 //DON'T HARDCODE THIS
 var number_of_matrices = 9; 
+
+//I added the lines below to try to account for the weird thing that was happening with math.random(). 
+
+for (i = 0; i < 20; i++) {
+    random(0, number_of_matrices - 1); 
+}
+
 var matrix_number = random(0, number_of_matrices - 1); 
 //var scale_and_level = 3; 
 
