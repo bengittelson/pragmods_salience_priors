@@ -65,6 +65,7 @@ var familiarization_status = 0;
 //    4 -> "sundae"
 //    5 -> "Christmas tree"
 var stim_index = random(0, 5); 
+// var stim_index = 1; 
 
 
 // The Scale and Levels.
@@ -293,16 +294,19 @@ var distractor_prop_unpermuted = distractor_prop_list[scale_and_level];
 var level = level_list[scale_and_level]; 
 
 //fill choice_names_unpermuted
-var choice_names_unpermuted = []; 
+var choice_names_unpermuted = new Array(); 
 var counter = 1; 
 for (i = 0; i < expt.length; i++) {
-    if (target_unpermuted.indexOf(i) >= 0) {
-        choice_names_unpermuted[i] = "target"; 
-    }
-    else {
-        choice_names_unpermuted[i] = "distractor" + counter; 
-        counter++; 
-    }
+    // if (target_unpermuted.indexOf(i) >= 0) {
+    //     choice_names_unpermuted[i] = "target"; 
+    // }
+    // else {
+    //     choice_names_unpermuted[i] = "distractor" + counter; 
+    //     counter++; 
+    // }
+
+    choice_names_unpermuted[i] = "object" + counter; 
+    counter++; 
 }
 
 //fill positions
